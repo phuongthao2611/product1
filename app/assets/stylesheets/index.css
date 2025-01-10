@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #4CAF50;
+  }
+
+  .index {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  .index a {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+
+  .index a:hover {
+    background-color: #45a049;
+  }
+
+  #products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 14em;
+  }
+  .product a{
+    background-color: #f9f9f9;
+  }
+  #products div {
+    flex: 1 1 calc(33.333% - 10px);
+    max-width: calc(33.333% - 10px);
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  #products div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  #products div a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  #products div a:hover {
+    color: #4CAF50;
+  }
+.d-block.btn-register{
+    background-color: #45a049;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+}
+.d-block.btn-register a{
+    color: white;
+    font-size:12px;
+}

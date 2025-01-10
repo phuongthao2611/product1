@@ -1,11 +1,18 @@
 <h1>Products</h1>
+<div class= "index">
+    <%= link_to "New product", new_product_path %>
+    <%= link_to "Sign In", new_user_session_path %>
+    <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "d-block btn-register", data: { turbo: false } %>
 
-<%= link_to "New product", new_product_path %>
-
-<div id="products">
-  <% @products.each do |product| %>
-    <div>
-      <%= link_to product.name, product %>
+    <% if user_signed_in? %>
+    <% end %>
+    <div class="product">
+        <div id="products">
+            <% @products.each do |product| %>
+            <div class="sanpham">
+                <%= link_to product.name, product %>
+            </div>
+         <% end %>
+        </div>
     </div>
-  <% end %>
 </div>
